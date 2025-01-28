@@ -1,16 +1,52 @@
-
+# System files
 .DS_Store
 .idea
+.history
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Terraform
 *.tfstate
 *.tfstate.*
-**.terraform
-**.terraform.lock.*
-**google_credentials.json
-**logs/
-**.env
-**__pycache__/
-.history
+.terraform/
+.terraform.lock.*
+
+# Data and Databases
+*.csv
+*.parquet
+*.gz
+*.zip
+*.sqlite
+*.db
 **/ny_taxi_postgres_data/*
 serving_dir
-.ipynb_checkpoints/
+
+# Credentials and Environment
+*.json
+**/keys/*
+.env
+.env.local
+.env.*.local
+**google_credentials.json
+
+# Logs
+**logs/
+*.log
+
+# Exceptions
 !week_6_stream_processing/avro_example/data/rides.csv
+!**/data/*.csv
+!package.json
