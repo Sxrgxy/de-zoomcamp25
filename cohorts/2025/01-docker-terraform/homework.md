@@ -1,5 +1,7 @@
 # Module 1 Homework: Docker & SQL
 
+Solution: [solution.md](solution.md)
+
 In this homework we'll prepare the environment and practice
 Docker and SQL
 
@@ -68,6 +70,7 @@ volumes:
 - postgres:5432
 - db:5432
 
+If there are more than one answers, select only one of them
 
 ##  Prepare Postgres
 
@@ -136,7 +139,7 @@ Consider only `lpep_pickup_datetime` when filtering by date.
 ## Question 6. Largest tip
 
 For the passengers picked up in October 2019 in the zone
-name "East Harlem North" which was the drop off zone that had
+named "East Harlem North" which was the drop off zone that had
 the largest tip?
 
 Note: it's `tip` , not `trip`
