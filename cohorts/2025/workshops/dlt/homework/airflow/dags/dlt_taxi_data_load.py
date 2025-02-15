@@ -47,7 +47,7 @@ default_args = {
 with DAG(
     'dlt_taxi_data_load',
     default_args=default_args,
-    schedule_interval='@monthly',
+    schedule_interval='@once',
     catchup=True,
     max_active_runs=1,
     concurrency=2 
