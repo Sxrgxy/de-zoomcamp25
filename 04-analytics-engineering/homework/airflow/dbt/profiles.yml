@@ -1,0 +1,14 @@
+bq-dbt-workshop:
+  outputs:
+    dev:
+      dataset: ny_taxi
+      fixed_retries: 1
+      keyfile: /opt/airflow/keys/google-credentials.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: de-zoomcamp25-448205
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
+  target: dev

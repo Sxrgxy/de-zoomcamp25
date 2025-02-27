@@ -1,5 +1,5 @@
 version: '3'
-x-airflow-common: &airflow-common
+x-airflow-common: &airflow-common #is this a Dockerfile image?
   build: .
   environment: &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
@@ -9,7 +9,7 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
-  volumes:
+  volumes: #add mounting dbt directory
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
@@ -114,5 +114,4 @@ services:
       - "5555:5555"
 
 volumes:
-  #ny_taxi_postgres_data:
   postgres-db-volume:
