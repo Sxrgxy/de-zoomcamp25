@@ -51,4 +51,9 @@ serving_dir
 !**/data/*.csv
 !package.json
 
+# Week 5 - Batch Processing
+05-batch/homework/notebooks/data/
+05-batch/homework/notebooks/fhvhv/
+05-batch/homework/spark/
+
 /keys/*
